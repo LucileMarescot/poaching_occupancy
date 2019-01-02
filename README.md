@@ -41,10 +41,11 @@ The codes "Simulation_Bias_OccupancyDesign.R" and "Simulation_Bias_Parameters.R"
 The R scripts to perform the simulation are structured as follows:
 
 * Generate the simulated data sets 
-   * for different study design "Simulation_Bias_OccupancyDesign.R" 
-   * for species associated to different detection and occupancy probabilities "Simulation_Bias_Parameters.R"
+   * for different study design "Simulation_Bias_OccupancyDesign.R" and source('Multispecies_occupancy_dynamic_simul_fitting.R')
+   * for species associated to different detection and occupancy probabilities "Simulation_Bias_Parameters.R" and source('Multispecies_occupancy_dynamic_simul_fitting.R')
 * Model fitting 
-   * calculate the probability of obtainting the simulated data given the two-species dynamic occupancy model via source('likelihood_CSTeffects.R')
+   * calculate the probability of obtainting the simulated data given the two-species dynamic occupancy model via source('Multispecies_occupancy_dynamic_simul_fitting.R')
 * Calculate the mean bias and minimum square error 
+
 
 This code was developped in R version 3.5.0 (2018-04-23). This code is licensed under the terms of the GNU General Public License v3.0.
